@@ -1,6 +1,3 @@
-[submodule "command_line_tools/bwa_0.7.12"]
-	path = command_line_tools/bwa_0.7.12
-	url = https://github.com/mskcc-cwl/bwa_0.7.12
 [submodule "command_line_tools/samtools_1.3.1"]
 	path = command_line_tools/samtools_1.3.1
 	url = https://github.com/mskcc-cwl/samtools_1.3.1
