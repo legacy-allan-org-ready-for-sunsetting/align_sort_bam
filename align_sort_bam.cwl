@@ -47,19 +47,19 @@ steps:
         source: lane_id
     out:
       - id: output_sam
-    run: command_line_tools/bwa_mem_0.7.12/bwa_mem_0.7.12.cwl
+    run: command_line_tools/bwa_0.7.12/bwa_mem.cwl
   - id: samtools_sort
     in:
       - id: input
         source: sam_to_bam/output_bam
     out:
       - id: output_file
-    run: command_line_tools/samtools_sort_1.3.1/samtools_sort_1.3.1.cwl
+    run: command_line_tools/samtools_1.3.1/samtools_sort.cwl
   - id: sam_to_bam
     in:
       - id: input
         source: bwa_mem/output_sam
     out:
       - id: output_bam
-    run: command_line_tools/samtools_view_1.3.1/samtools_view_1.3.1.cwl
+    run: command_line_tools/samtools_1.3.1/samtools_view.cwl
 requirements: []
